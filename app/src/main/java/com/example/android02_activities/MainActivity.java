@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public void onClick(View view) {
       if(view.getId()==R.id.btCreate){
-        Student st = new Student(txtName.getText().toString(), Integer.parseInt(txtBirth.getText().toString()), (swGender.isChecked())?true:false);
+        Student st = new Student(txtName.getText().toString(), Integer.parseInt(txtBirth.getText().toString()), swGender.isChecked());
         students.addStudent(st);
         txtName.setText("");
         txtBirth.setText("");
